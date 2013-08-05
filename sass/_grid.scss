@@ -1,0 +1,31 @@
+/** Grid **/
+$grid-width: 1024;
+$num-columns: 12;
+$column-width: 70;
+
+$column-margin: 0.1% * (($grid-width - ($column-width * $num-columns)) / ($num-columns + 1));
+$column-width: 100% * ($column-width/$grid-width);
+
+@mixin column($span, $left-margin: true, $right-gutter: true) {
+	$margin-left: $column-margin;
+	$width: ($span - 1)*$column-margin + $span*$column-width;
+	$clear: none;
+
+	@if $span == 12 {
+		$clear: both;
+	}
+
+	@if $left-margin == false {
+		$margin-left: 0;
+		$width: $width + $column-margin;
+	}
+
+	@if $right-gutter == false {
+		$width: $width + $column-margin;
+	}
+
+	clear: $clear;
+	float: left;
+	margin-left: $margin-left;
+	width: $width;
+}

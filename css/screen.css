@@ -1,0 +1,310 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/** Colors **/
+/** Grid **/
+/* line 1, ../sass/_base.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 5, ../sass/_base.scss */
+body {
+  background: #ecf0f1;
+  color: #34495e;
+  margin: 1rem 0;
+  font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-weight: 200;
+}
+
+/* line 13, ../sass/_base.scss */
+a {
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+  color: #34495e;
+}
+/* line 17, ../sass/_base.scss */
+a:hover {
+  color: #bdc3c7;
+}
+
+/* line 22, ../sass/_base.scss */
+h1, h2, h3 {
+  color: #2980b9;
+  padding: 1rem 0 0.5rem;
+  text-align: center;
+}
+
+/* line 28, ../sass/_base.scss */
+h1 {
+  font-size: 36px;
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+/* line 33, ../sass/_base.scss */
+h2 {
+  font-size: 22px;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+/* line 38, ../sass/_base.scss */
+h3 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/* line 43, ../sass/_base.scss */
+p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  clear: left;
+  line-height: 150%;
+  margin: 1rem 0;
+}
+
+/* line 50, ../sass/_base.scss */
+.ingress {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+/* line 54, ../sass/_base.scss */
+section {
+  clear: both;
+  float: left;
+  margin-left: 1.41538%;
+  width: 97.60048%;
+  overflow: hidden;
+  *zoom: 1;
+  background: #ecf0f1;
+}
+
+/* line 60, ../sass/_base.scss */
+.wrapper {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* line 66, ../sass/_base.scss */
+.photo {
+  clear: none;
+  float: left;
+  margin-left: 1.41538%;
+  width: 48.09255%;
+  margin: 0 auto;
+  float: none;
+}
+/* line 71, ../sass/_base.scss */
+.photo img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 78, ../sass/_base.scss */
+.contact-buttons {
+  clear: both;
+  float: left;
+  margin-left: 0;
+  width: 99.01587%;
+  overflow: hidden;
+  *zoom: 1;
+  margin-top: 1rem;
+}
+/* line 83, ../sass/_base.scss */
+.contact-buttons li {
+  clear: none;
+  float: left;
+  margin-left: 1.41538%;
+  width: 48.09255%;
+}
+
+/* line 88, ../sass/_base.scss */
+.contact-link {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  background: #2980b9;
+  color: #ecf0f1;
+  display: block;
+  float: none;
+  min-height: 3rem;
+  line-height: 3rem;
+  margin: 0 auto 1rem;
+  padding: 0;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+}
+/* line 106, ../sass/_base.scss */
+.contact-link .cta,
+.contact-link .details,
+.contact-link .response {
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  display: block;
+  position: absolute;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+/* line 117, ../sass/_base.scss */
+.contact-link .details,
+.contact-link .response {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 121, ../sass/_base.scss */
+.contact-link:hover {
+  background: #3489db;
+  color: #ecf0f1;
+}
+/* line 126, ../sass/_base.scss */
+.contact-link:hover .cta,
+.contact-link:hover .response {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 129, ../sass/_base.scss */
+.contact-link:hover .details {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 134, ../sass/_base.scss */
+.contact-link:active {
+  background: #3489db;
+  color: #ecf0f1;
+}
+/* line 139, ../sass/_base.scss */
+.contact-link:active .cta,
+.contact-link:active .details {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 142, ../sass/_base.scss */
+.contact-link:active .response {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+@media all and (min-width: 479px) {
+  /* line 1, ../sass/_480up.scss */
+  .wrapper {
+    max-width: 480px;
+  }
+
+  /* line 5, ../sass/_480up.scss */
+  h1 {
+    font-size: 36px;
+    font-size: 3.6rem;
+  }
+
+  /* line 9, ../sass/_480up.scss */
+  h2 {
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
+
+  /* line 13, ../sass/_480up.scss */
+  h3 {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+
+  /* line 17, ../sass/_480up.scss */
+  p {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+
+  /* line 21, ../sass/_480up.scss */
+  .ingress {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+
+  /* line 25, ../sass/_480up.scss */
+  .contact-link {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,8 @@
+@mixin font-size($size, $letter-spacing: 0) {
+	font-size: $size + px;
+	font-size: ($size/10) + rem;
+
+	@if $letter-spacing > 0 {
+		@include letter-spacing($size, $letter-spacing);
+	}
+}
