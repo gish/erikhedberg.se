@@ -1,28 +1,28 @@
+@import "mixins";
+
 html {
 	font-size: 62.5%;
 }
 
 body {
-	background: $section-background;
-	color: $text;
 	margin: 1rem 0;
 	font-family: $base-font;
 	font-weight: 200;
+    color: #333;
+    line-height: 1.5;
 }
 
 a {
 	@include transition(all $transition-time);
-	color: $text;
+    color: #333;
 
-	&:hover {
-		color: $link-hover;
-	}
+    &:hover {
+        color: #777;
+    }
 }
 
 h1, h2, h3 {
-	color: $dark-blue;
 	padding: 1rem 0 0.5rem;
-	text-align: center;
 }
 
 h1 {
@@ -30,117 +30,32 @@ h1 {
 	font-weight: 500;
 }
 
-h2 {
-	@include font-size(22);
-	font-weight: 500;
-}
-
-h3 {
-	@include font-size(18);
-	font-weight: 500;
-}
-
 p {
 	@include font-size(14);
-	clear: left;
-	line-height: 150%;
 	margin: 1rem 0;
 }
 
-.ingress {
-	@include font-size(16);
+.presentation {
+    float: left;
+    width: 70%;
 }
 
-section {
-	@include column(12);
-	@include clearfix;
-	background: $white;
+.ingress {
+    @include font-size(18);
 }
 
 .wrapper {
 	@include clearfix;
 	margin: 0 auto;
 	padding: 1rem;
+    max-width: 480px;
 }
 
-.photo {
-	@include column(6);
-	margin: 0 auto;
-	float: none;
-
-	img {
-		width: 100%;
-		height: auto;
-	}
-
-}
-
-.contact-buttons {
-	@include column(12, false);
-	@include clearfix();
-	margin-top: 1rem;
-
-	li {
-		@include column(6);
-	}
-}
-
-.contact-link {
-	@include border-radius(4px);
-	@include font-size(14);
-	$h: 3rem;
-	background: $button-bg;
-	color: $white;
-	display: block;
-	float: none;
-	min-height: $h;
-	line-height: $h;
-	margin: 0 auto 1rem;
-	padding: 0;
-	position: relative;
-	text-decoration: none;
-	width: 100%;
-
-	.cta,
-	.details,
-	.response {
-		@include transition(opacity $transition-time);
-		display: block;
-		position: absolute;
-		padding: 0;
-		text-align: center;
-		width: 100%;
-		height: 100%;
-	}
-
-	.details,
-	.response {
-		@include opacity(0);
-	}
-
-	&:hover {
-		background: $button-bg-hover;
-		color: $white;
-
-		.cta,
-		.response {
-			@include opacity(0);
-		}
-		.details {
-			@include opacity(1);
-		}
-	}
-
-	&:active {
-		background: $button-bg-hover;
-		color: $white;
-
-		.cta,
-		.details {
-			@include opacity(0);
-		}
-		.response {
-			@include opacity(1);
-		}
-	}
+.avatar {
+    @include border-radius(50%);
+    @include box-sizing(border-box);
+    display: block;
+    float: left;
+    padding: 1rem;
+    width: 30%;
 }
